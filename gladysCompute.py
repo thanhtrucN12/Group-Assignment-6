@@ -1,9 +1,8 @@
 import io
-
+import math
 import gladysSatellite as satellite
-
 """
-	Student: Gabriel Solomon
+	Student: Truc Nguyen
 	Module: gladysCompute
 	Description: This module preforms the underlying calculations to figure out 
     the distance between the current position (x,y) and destination position (x,y)
@@ -15,42 +14,46 @@ def value(x,y):
 	"""
 	value = satellite.gpsAverage(x,y,"latitude") +satellite.gpsAverage(x,y,"longtitude") +satellite.gpsAverage(x,y,"alttude") + satellite.gpsAverage(x,y,"time")
 	return value
-
 """
 Calling a function from a module
 """
 #path a json file 
 pathToJSONDataFiles = "/Users/trucnguyen/Documents/GitHub/Group-Assignment-6/jsonFiles"
-#get data and print it
-data = satellite.readSat("longtitude", pathToJSONDataFiles)
-#print a value from data list 
-print(data = ", data)
-
+# read the satellite data
+satellite = readSat(sat, pathToJSONDataFiles)
+def readSat(sat, pathToJSONDataFiles):
+	"""
+		reads satellite data from a json file
+	"""
+def sat():
+    """
+    fileName = sat + "-satellite.json"
+    """
 def gpsAverage(x, y):
 	"""
     	The gpsAverage formula as defined below and return the average to the gladysUserInterface module
 	"""
 	gpsAverage = value/4
 	return gpsAverage
-
-
-
 def distance (current, destination):
 	"""
 	    Computes the distance between the current position and the destination position using the following formulas. 
 		Distance = square root(gpsAverage(x current, y current) square + gpsAverage(x destination, ydestination) square)
 	"""
-	distance = (gpsAverage(xCurrent, yCurrent)**2 + gpsAverage(xDestination, yDestinaion)**2)**0.5
+	distance = (gpsAverage(xCurrent, yCurrent)**2 + gpsAverage(xDestination, yDestination)**2)**0.5
 	return distance
 """
 calling a function to calculate value from a formula
 """
-current = int(input("Enter xCurrent value: ", "Enter yCurrent value: "))
-print("current possition: ", distance)
+xCurrent = int(input("Enter xCurrent value: "))
+print("xCurrent possition: ", xCurrent)
+yCurrent = int(input("Enter yCurrent value: "))
+print("yCurrent possition: ", yCurrent)
 
-destination = int(input("Enter xDestination value: ", "Enter yDestination value: "))
-print("destination possition: ", distance)
-
+xDestination = int(input("Enter xDestination value: "))
+print("xDestination possition: ", xDestination)
+yDestination = int(input("Enter yDestination value: "))
+print("yDestination possition: ", yDestination)
 #end of code by Truc Nguyen
 
 	

@@ -11,9 +11,4 @@ import gladysUserInterface as userInterface
 
 userInterface.start()
 
-
-# this is an example of the help command on a module.  You can get help on 
-# any python module The docstring documentation is what is displayed.
-# help(userInterface)
-
 #end code by Truc Nguyen

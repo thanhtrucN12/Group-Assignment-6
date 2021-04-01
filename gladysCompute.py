@@ -1,6 +1,6 @@
 import io
-import math
 import gladysSatellite as satellite
+import math
 """
 	Student: Truc Nguyen
 	Module: gladysCompute

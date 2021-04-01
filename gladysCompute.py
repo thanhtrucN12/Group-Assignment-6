@@ -7,7 +7,7 @@ import math
 	Description: This module preforms the underlying calculations to figure out 
     the distance between the current position (x,y) and destination position (x,y)
 """
-# Start of code by Truc Nguyen
+
 def value(x,y):
 	"""
 	value = 𝑔𝑝𝑠𝑉𝑎𝑙𝑢𝑒(𝑥,𝑦,"𝑙𝑎𝑡𝑖𝑡𝑢𝑑𝑒")+𝑔𝑝𝑠𝑉𝑎𝑙𝑢𝑒(𝑥,𝑦,"𝑙𝑜𝑛𝑔𝑖𝑡𝑢𝑑𝑒")+𝑔𝑝𝑠𝑉𝑎𝑙𝑢𝑒(𝑥,𝑦,"𝑎𝑙𝑡𝑖𝑡𝑢𝑑𝑒")+𝑔𝑝𝑠𝑉𝑎𝑙𝑢𝑒(𝑥,𝑦,"𝑡𝑖𝑚𝑒")
@@ -54,6 +54,6 @@ xDestination = int(input("Enter xDestination value: "))
 print("xDestination possition: ", xDestination)
 yDestination = int(input("Enter yDestination value: "))
 print("yDestination possition: ", yDestination)
-#end of code by Truc Nguyen
+
 
 	
